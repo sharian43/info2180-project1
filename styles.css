@@ -24,6 +24,32 @@ header.container{
     align-items: center;
 }
 /*--------------------------Hero overview--------------------------*/
+.overview-hero{
+    background-color: #E2E8F0;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.overview-hero .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    padding-top: 0 20px;
+}
+.overview-hero img{
+    padding: 20px;
+    width: 300px;
+    height: 240px;
+    border-radius: 15%;
+    margin: 0;
+}
+.overview-hero-text {
+    flex: 1; 
+    padding: 20px;
+}
 
 /*--------------------------Learn about--------------------------*/
 .learn-about .container .cards{
@@ -32,7 +58,7 @@ header.container{
     padding: 0;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2%;
+    grid-column-gap: 20px;
 }
 
 .learn-about .container .card{
