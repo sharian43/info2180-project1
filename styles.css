@@ -68,7 +68,33 @@ header.container{
     padding: 20px;
 }
 /*--------------------------Testing--------------------------*/
-
+.testing{
+    background-color: #4A5568;
+    color: white;
+    padding: 60px;
+}
+.testing .container{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.cta{
+    text-align: center;
+    display: inline-block;
+    grid-column: 2;
+    background-color: #48BB78;
+    border-radius: 5px;
+    margin: auto;
+    padding: 15px 25px;
+}
+.testing .cta .btn, a{
+    background-color: #48BB78;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
 /*--------------------------Stories--------------------------*/
 
 /*--------------------------Newsletter--------------------------*/
