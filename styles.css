@@ -15,10 +15,14 @@ body {
 header {
     background-color: white;
     font-size: 18px;
+}
+
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    flex-wrap: nowrap;
 }
 
 header h1 {
@@ -29,8 +33,6 @@ header h1 {
 header ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    margin-left: auto; /* Push the navigation links to the right */
 }
 
 header li {
@@ -38,14 +40,17 @@ header li {
     display: inline-block;
 }
 
-header a {
+header .container a {
     color: #6b7280;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
 }
 
-header a:hover {
+header .container a:visited{
+    color: #6b7280;
+}
+
+header .container a:hover {
     color: #5A67D8;
     transition: 1s;
 }
@@ -53,11 +58,8 @@ header a:hover {
 /*--------------------------Hero overview--------------------------*/
 .overview-hero{
     background-color: #E2E8F0;
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
+
 .overview-hero .container{
     display: flex;
     flex-wrap: nowrap;
@@ -66,6 +68,7 @@ header a:hover {
     gap: 10%;
     padding-top: 0 20px;
 }
+
 .overview-hero img{
     padding: 20px;
     width: 300px;
@@ -73,6 +76,7 @@ header a:hover {
     border-radius: 15%;
     margin: 0;
 }
+
 .overview-hero-text {
     flex: 1; 
     padding: 20px;
@@ -81,7 +85,6 @@ header a:hover {
 /*--------------------------Learn about--------------------------*/
 .learn-about .container .cards{
     display: grid;
-    grid-gap: 20px;
     padding: 0;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -93,45 +96,53 @@ header a:hover {
     box-shadow: 0 4px #E2E8F0;
     border: 2px solid #E2E8F0;
     border-radius: 5px;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 40% 10% 50%;
 }
 .learn-about .container .card img{
     grid-row: 1;
     padding: 20px;
-    /*justify-content: center;*/
     width: 300px;
     height: 240px;
     border-radius: 25%;
     margin: 0;
     justify-self: center;
 }
+
 .learn-about h2{
     color: #48BB78;
     font-size: 24px;
 }
+
 .learn-about .container .card h3{
     color: #48BB78;
     font-size: 21px;
     grid-row: 2;
     padding: 20px;
-    margin: 0;
 }
+
 .learn-about .container .card p{
     margin: 0;
     padding: 20px;
 }
+
 /*--------------------------Testing--------------------------*/
 .testing{
     background-color: #4A5568;
     color: white;
     padding: 60px;
+    margin-top: 40px;
 }
+
 .testing .container{
     display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 50% 50%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+}
+
+.testing .testing-description{
+    display: inline-block;
+    grid-column: 1;
 }
 .cta{
     text-align: center;
@@ -142,21 +153,21 @@ header a:hover {
     margin: auto;
     padding: 15px 25px;
 }
-.testing .cta .btn, a{
-    background-color: #48BB78;
-    border-radius: 5px;
+.testing .cta .btn{
     text-align: center;
     text-decoration: none;
 }
 /*--------------------------Stories--------------------------*/
 .stories h2{
     color: #5A67D8;
+    padding-left: 35px;
 }
-.stories .container article .article-body h3{
+.stories .container h3{
     font-size: 18px;
 }
-.stories .container article .article-body a{
+.stories .container a{
     color: #5A67D8;
+    text-decoration: none;
 }
 .stories .container article{
     display: grid;
