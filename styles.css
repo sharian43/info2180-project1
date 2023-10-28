@@ -31,7 +31,7 @@ header.container{
     grid-gap: 20px;
     padding: 0;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2%;
 }
 
@@ -40,15 +40,17 @@ header.container{
     box-shadow: 0 4px #E2E8F0;
     border: 2px solid #E2E8F0;
     border-radius: 5px;
+    grid-template-rows: auto auto auto;
 }
 .learn-about .container .card img{
     grid-row: 1;
     padding: 20px;
-    justify-content: center;
+    /*justify-content: center;*/
     width: 300px;
     height: 240px;
     border-radius: 25%;
     margin: 0;
+    justify-self: center;
 }
 .learn-about h2{
     color: #48BB78;
@@ -57,11 +59,12 @@ header.container{
 .learn-about .container .card h3{
     color: #48BB78;
     font-size: 21px;
-    grid-row: 3;
+    grid-row: 2;
     padding: 20px;
+    margin: 0;
 }
 .learn-about .container .card p{
-    grid-row: 3;
+    margin: 0;
     padding: 20px;
 }
 /*--------------------------Testing--------------------------*/
