@@ -118,19 +118,32 @@ header.container{
 }
 /*--------------------------Newsletter--------------------------*/
 .newsletter{
-
+    background-color: #48BB78;
+    color: white;
+    margin: 0;
 }
 .newsletter .container{
-
+    text-align: center;
+    padding: 20px;
 }
 form{
-
+    display: flex;
+    justify-content: center;
+    column-gap: 2%;
 }
 form button{
-
+    background-color: #5A67D8;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
 }
 form input{
-
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
 }
 /*--------------------------Footer--------------------------*/
 footer{
